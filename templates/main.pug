@@ -1,0 +1,20 @@
+doctype html 
+html 
+    head 
+        meta(charset="utf-8")
+        title #{title}
+        include style.pug
+    body
+        include searchbar.pug
+        each post in posts
+            div.post
+                h1
+                    a(href=post.url) #{post.title}
+                h3 #{post.fdate}
+            
+        div.pagination
+            if nextPageLink
+                a(href=nextPageLink) older
+            if prevPageLink
+                a(href=prevPageLink) newer
+        

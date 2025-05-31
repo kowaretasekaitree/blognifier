@@ -1,0 +1,7 @@
+div.searchbar
+    form(action="/search") 
+        if query
+            input.searchinput(type="text", name="q", placeholder=query)
+        else
+            input.searchinput(type="text", name="q", placeholder="Search")
+        input.searchbutton(type="submit", value="search")

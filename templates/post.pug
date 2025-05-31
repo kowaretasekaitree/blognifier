@@ -1,0 +1,12 @@
+doctype html 
+html 
+    head 
+        meta(charset="utf-8")
+        title #{title}
+        include style.pug
+    body
+        include searchbar.pug
+        article
+            != article
+
+        a(href="/") to main page

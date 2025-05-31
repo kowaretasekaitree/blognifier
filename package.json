@@ -1,0 +1,46 @@
+{
+  "name": "blognifier",
+  "version": "1.0.0",
+  "description": "Zero-config markdown blog server with full-text search - serve any directory of .md files as a blog",
+  "main": "lib/server.js",
+  "type": "module",
+  "bin": {
+    "blognifier": "bin/blognifier.js"
+  },
+  "scripts": {
+    "start": "node bin/blognifier.js",
+    "dev": "node --watch bin/blognifier.js",
+    "test": "node bin/blognifier.js --help"
+  },
+  "keywords": [
+    "blog",
+    "markdown",
+    "sqlite",
+    "fts5",
+    "search",
+    "nodejs",
+    "cli",
+    "npx",
+    "zero-config",
+    "static-site"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^11.1.0",
+    "express": "^4.18.2",
+    "markdown-it": "^14.0.0",
+    "pug": "^3.0.2",
+    "sqlite3": "^5.1.6"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "files": [
+    "bin/",
+    "lib/",
+    "templates/",
+    "css/",
+    "README.md"
+  ]
+}

@@ -1,0 +1,43 @@
+.pagination {
+    display: flex;
+    justify-content: space-between;
+}
+
+.searchbar form {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 0.5em;
+}
+
+.searchinput {
+    margin-right: 0.5em;
+    width: 80%;
+    box-sizing: content-box;
+    height: 1.5em;
+}
+
+.searchbutton {
+    width: 20%;
+    height: 1.5em;
+    box-sizing: content-box;
+}
+
+
+
+.post {
+    padding-bottom: 1em;
+}
+
+
+.post h1 {
+    margin-bottom: 0em;
+    margin-top: 0.5em;
+}
+
+.post h3 {
+    margin-top: 0em;
+}
+
+.post pre {
+    font-size: 140%;
+}

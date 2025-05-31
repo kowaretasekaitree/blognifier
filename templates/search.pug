@@ -1,0 +1,24 @@
+doctype html 
+html 
+    head 
+        meta(charset="utf-8")
+        title #{title}
+        include style.pug
+    body
+        include searchbar.pug
+        if empty
+            p No results for your query 
+        else 
+            each result in results
+                div.post
+                    h1
+                        a(href=result.url) #{result.title}
+                    h3 #{result.fdate}
+                    pre #{result.highlight}
+        div.pagination
+            if nextPageLink
+                a(href=nextPageLink) older
+            if prevPageLink
+                a(href=prevPageLink) newer
+        
+        a(href="/") to main page
